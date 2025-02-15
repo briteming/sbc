@@ -12,7 +12,7 @@ jobs:
       - name: Fetch issues and generate markdowns
         uses: skyfe79/hugo-with-github-issues@v1.7
         with:
-          github-token: ${{ secrets.GITHUB_TOKEN }}
+          github-token: ${{ secrets.G_T }}
           repo: 'sbc'
           owner: 'briteming'
           skip-author: 'utterances-bot'
