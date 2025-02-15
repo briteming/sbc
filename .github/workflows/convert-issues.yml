@@ -13,8 +13,8 @@ jobs:
         uses: skyfe79/hugo-with-github-issues@v1.7
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
-          repo: 'blog.contents'
-          owner: 'skyfe79'
+          repo: 'sbc'
+          owner: 'briteming'
           skip-author: 'utterances-bot'
           skip-pull-requests: 'true'
           use-issue-seperator: 'false'
@@ -22,8 +22,8 @@ jobs:
           output: 'content/posts'
       - name: Commit files
         run: |
-          git config --local user.email "skyfe79@gmail.com"
-          git config --local user.name "sungcheol kim"
+          git config --local user.email "briteming@gmail.com"
+          git config --local user.name "briteming"
           git add .
           git commit -m "Add Posts"
       - name: Push changes
